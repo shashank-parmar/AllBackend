@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <!-- <div>
+        <input type="number" id="num1">
+        </br>
+        <input type="number" id="num2">
+        </br>
+        <input type="number" id="resu">
+    </br>
+        <button id="mul" onclick="func1()">multiply</button>
+        <button id="divi" onclick="func2()">division</button>
+    </div>
+     -->
+
+
+    <script>
+        // function func1 (){
+        //     let a = document.getElementById("num1").value;
+        //     let b = document.getElementById("num2").value;
+        //     let okk = a*b;
+        //     document.getElementById("resu").innerHTML=okk;
+            
+        //     console.log(okk)
+
+        // }
+        // function func2 (){
+        //     let a = document.getElementById("num1").value;
+        //     let b = document.getElementById("num2").value;
+        //     document.getElementById("resu").innerHTML=a / b;
+        // }
+
+//q1 swap to value
+
+// let a = 10;
+// let b = 20;
+// let c = a;
+//  b = c;
+// let c = b=a;
+// console.log(a,b,c)
+
+
+//q2 find max numbr of 2 value
+// let a = 10;
+// let b = 20;
+// function fun (num1,num2){
+    // return 
+    // if(num1>num2){
+    //     console.log("a isbigger")
+    // }
+    // else if(num1=num2){
+    //     console.log("there are same")
+    // }
+    // else{
+    //     console.log("b i bigger")
+    // }
+
+
+    //ternary only working
+//     return (num1>num2)?"a is bigger":"b is bigger";
+// }
+// let calle = fun(10,20);
+// console.log(calle);
+
+
+//q3 lanscape true and flase
+
+// function land (width,height){
+//     return (width>height)
+// }
+// let cll = land(800,2000);
+// console.log(cll);
+
+
+
+//q4 fizzbuzz algorithm
+
+// function buzz (num1){
+//     if(typeof num1 != "number"){
+//         return ("plese enter valid nmber")
+//     }
+//     if(num1%3==0){
+//         return ("buzz 3")
+//     }
+//     if(num1%5==0){
+//         return ("fizz 5")
+//     }
+//     if((num1%3==0) && (num1%5==0)){
+//         return("buzzfizz 3-5")
+//     }
+//     else{
+//         return("some odd number inputed "+ num1)
+//     }
+
+// }
+// let ok = buzz(5);
+// console.log(ok);
+
+
+
+//q5 spedd under 70 it's good speed between 70 to 120 get penelty point 5 but speed above 120 you got licence suspend
+
+// let speed = 70;
+// let point = 5;
+
+// function speedl (current){
+//     if(current<=speed){
+//         return("you are a good driver")
+//     }
+//     else{
+//         let maps = Math.floor((current - speed) / point);
+//         if(maps < 10){
+//             return(`speed imite cross you got penelty ${maps} time`)
+//         }
+//         else{
+//             return(`you got penelty ${maps} times. licence suspend`)
+//         }
+//     }
+// }
+
+// let inp = speedl(120);
+// console.log(inp);
+
+
+//q6 odd even number loop
+
+
+// function oddeven (aa){
+//     for(i=0;i<=aa;i++){
+//         if(i % 2 === 0){
+//             console.log(i,"Even")
+//         }
+//         else{
+//             console.log(i,"odd")
+//         }
+//     }
+// }
+// let val = oddeven(100)
+// console.log(val);
+
+
+
+//q7 check true and false value in array
+
+// const valuesArray = [0, 1, '', undefined, false, true];
+
+// function checkCountTruthyFalsy(curArray) {
+//   let truthyCount = 0;
+  
+//   for (let value of curArray) {
+    // no need to check if(value !== false || value !== 0 || value !== '' or ...)
+//     if (value) {
+//       truthyCount++;
+//     }
+//   }
+//   return truthyCount;
+// }
+
+// console.log(checkCountTruthyFalsy(valuesArray));
+
+
+//q8 object string property
+// const person = {
+//     name:'shashank',
+//     city:'surat',
+//     mo:8787878787,
+//     add:'varachha'
+// }
+
+// function obje (current){
+//     for(let val in current){
+//         if(typeof (current[val]) == "string"){
+//             console.log(current[val])
+//         }
+//     }
+// }
+
+// let cll = obje(person)
+// console.log(cll);
+
+
+
+//q9 sum of multiply 3 or 5
+
+// function sums (current){
+//     let val = 0;
+//     for(i=0;i<current;i++){
+//         if((i % 3 === 0) || (i % 5 === 0)){
+//             val +=i;
+//         }
+//     }
+//     console.log(val)
+// }
+// let cll = sums(10);
+// console.log(cll)
+
+
+//q10 start patern
+
+// function star (val){
+//     for(i=0;i<val;i++){
+//         let pattern = ''
+//         for(j=0;j<=i;j++){
+//             pattern += "*"
+//         }
+//         console.log(pattern)
+//     }
+// }
+// let cll = star(5)
+// console.log(cll)
+
+
+//q11   marks avr gred
+
+// let arry = [81,91];
+
+// function cal (currentarrty){
+//     let total = 0;
+//     for (let current of currentarrty){
+//         total += current  
+//     }
+//     return(total/currentarrty.length);
+// }
+// function gred (_currentarrty){
+//     const avg = cal(_currentarrty)
+//     if(avg < 70 ) return gread = 'd';
+//     if(avg < 80 ) return gread = 'c';
+//     if(avg < 90 ) return gread = 'b';
+//     if(avg < 100 ) return gread = 'a';
+// }
+
+// let cll = gred(arry);
+// console.log(cll)
+
+
+//q12 rendom bingo cart
+
+
+//q13 prime number and factorial number
+
+
+//q14 sum using reeudce
+
+// function ssum (...items){
+//     console.log('current item' , items);
+//     return items.reduce((n1,n2) => n1 +n2);
+// }
+
+// let cll = ssum(1,2,3,4,5,6);
+// console.log(cll);
+
+
+
+
+//q15 sum in array
+
+
+//otp genrator
+
+// function ot (){
+//     let dig = '0123456789';
+//     let otp = ''
+//     for(let i=1;i<=6;i++){
+//          otp += dig[Math.floor(Math.random()*(dig.length))]
+//     }
+//     return otp;
+// }   
+// console.log(ot())
+
+// setInterval(()=>{
+//     location.reload();
+// },1000)
+
+
+//find min value in array
+//arry ma thi gotvu hoy to ...
+// let aar = [11,4,56,22,8];
+// function mi(){
+//     let val = Math.min(...aar)
+//     let val2 = Math.max(...aar)
+//     console.log(val,val2)
+// }
+// console.log(mi())
+
+
+
+
+//sorting
+// let str = ['s','h','a','s','h','a','n','k']
+// let str2 = ['c','b','a']
+// function so (){
+//     let s = str2.sort()
+//     console.log(s)
+// }
+// console.log(so())
+
+
+//even odd
+
+// function ode (n){
+//     if(n % 2 == 0 ){
+//         console.log('even')
+//     }
+//     else{
+//         console.log('odd')
+//     }
+// }
+// let cll = ode(21);
+// console.log(cll)
+
+
+//eliminate all odd number in arry
+let array = [11,42,3,4,5,6,7,8,9,'shashank','ss',false]
+let array2 = ['parmar']
+let st = array.filter((array)=>array.length>=3);
+let ev = array.filter((array)=>array%2==0);
+let ty = array.filter((array)=>(typeof array =="boolean"));
+// let red = array.reduce();
+let sr = array.sort();
+let con = array.concat(array2)
+console.log(ev,st,ty,sr,con)
+//reduce
+let a1 = [1,2,3,4,5,6,7,9,10];
+let aa = a1.reduce((h1,h2)=>{
+    return h1 + h2;
+})
+let pu = a1.push(11)
+// let shi = a1.shift(99)
+console.log(aa,a1)
+
+//substr()
+
+let redias = 1;
+let ok = Math.PI*redias*redias;
+console.log(ok)
+// let doc = document.getElementsByTagName('div')
+// doc.document.innerHTML=ok;
+
+
+const rank = [
+    {name:'shashank',year:2022,ranking:6},
+    {name:'harsh',year:2012,ranking:1},
+    {name:'dhruv',year:2023,ranking:4},
+    {name:'rohan',year:2025,ranking:5},
+    {name:'savani',year:2021,ranking:8}
+]
+
+console.log(rank
+    .filter(student => student.year == 2019 && student.ranking>=5)
+    .sort((n1,n2)=> n1.ranking - n2.ranking)
+    .map(student => student.name))
+
+
+
+const obj = {
+    name:'shashank',
+    add:'surat',
+    mobile:5678899,
+    state:'gujarat'
+}
+
+function keyobj (ob){
+    for(let ok in ob){
+        console.log(ok ,'::',ob[ok])
+    }
+}
+console.log(keyobj(obj))
+
+const item = [
+    {name:'iphone', price:200},
+    {name:'vivo', price:40},
+    {name:'mi', price:380},
+    {name:'redmi', price:80},
+    {name:'oppo', price:100},
+    {name:'realmi', price:20}
+]
+
+const okay = item.filter((item)=>{
+    return item.price>=100;
+})
+console.log(okay)
+
+let fill = item.filter((item)=>item.price>=200)
+console.log(fill)
+
+
+let maa = item.map((item)=>item.price+1);
+console.log(maa)
+
+let findd = item.find((item)=>item.name==='oppo');
+console.log(findd)
+
+
+console.log(item)
+
+let forech = item.forEach((item)=>item.price===200);
+console.log(forech)
+console.log(item)
+
+//item.some it return true
+//item.every it chack every item and retrn true
+
+
+
+let redd = item.reduce((current,item)=>item.price + current,0); //reduce ma 0 complsurry lakhvo
+console.log(redd);
+
+//includes 
+//item.include(6) it return true or flase
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

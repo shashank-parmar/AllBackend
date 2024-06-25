@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = prompt(("enter k , m , h"))
+        let ren = Math.floor(Math.random() * 3);
+        let cpu = ["k","m","h"][ren];
+
+        const match = ((user,cpu)=>{
+            if(user === cpu){
+                return "tie"
+            }
+            else if(user==="k" && cpu==="m"){
+                return "cpu winner"
+            }
+            else if(user==="k" && cpu==="h"){
+                return "user winner"
+            }
+            else if(user==="m" && cpu==="h"){
+                return "cpu winner"
+            }
+            else if(user==="m" && cpu==="k"){
+                return "user winner"
+            }
+            else if(user==="h" && cpu==="m"){
+                return "user winner"
+            }
+            else if(user==="h" && cpu==="k"){
+                return "cpu winner"
+            }
+        })
+        let result = match(user,cpu)
+        document.write(result);
+    </script>
+</body>
+</html>

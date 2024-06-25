@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="enter name" id="sname">
+    <br/>
+    <input type="text" placeholder="enter city" id="city">
+    <br/>
+    <button type="submit" id="submit">submit</button>
+    <button type="btn" id="deletes">delete</button>
+
+    <div id="dis"></div>
+    <script>
+        submit.addEventListener("click",(e)=>{
+            e.preventDefault()
+            let names = sname.value
+            let citys = city.value
+            localStorage.setItem("data",JSON.stringify([names,citys]))
+            console.log(e);
+            dis.innerHTML=`<h1>${names}</h1></br><h2>${citys}</h2>`
+            sname.value=""
+            city.value=""
+        })
+        deletes.addEventListener("click",(e)=>{
+            e.preventDefault();
+            localStorage.removeItem("data")
+            dis.innerHTML=""
+        })
+</script>
+</body>
+</html>
